@@ -1,0 +1,35 @@
+<div class="container custom-container-2">
+
+    <br>
+    <h4>Listado de Ingredientes </h4>
+    <button class="btn btn-success" routerLink="/newIngredient"> <b>Nuevo Ingrediente</b> </button>
+    <hr>
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead class="table-info">
+                <tr class="text">
+                    <th scope="col">Codigo Ingrediente</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Calorias</th>
+                    <th scope="col">Opciones</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ing of ingredient">
+                    <td class="text"> <b>{{ing.id}}</b></td>
+                    <td class="text">{{ing.name}}</td>
+                    <td class="text">{{ing.calories}}</td>
+                    <td>
+                        
+                        <button class="btn btn-warning" routerLink="/editIngredient/{{ing.id}}"> <b>Modificar</b> </button>
+                        <br>
+                        <br>
+                        <button class="btn btn-danger" (click)="deleteIngredient(ing.id)"> <b>Eliminar</b></button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

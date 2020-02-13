@@ -1,0 +1,18 @@
+{
+    "camisetas": [
+        {
+            "id": 1,
+            "imagen": "Antonio Estevez",
+            "imagen2": "tony@json.com",
+            "imagen3": "001-123-4567",
+            "precio": 10
+        },
+        {
+            "id": 2,
+            "imagen": "Antonio Estevez",
+            "imagen2": "tony@json.com",
+            "imagen3": "001-123-4567",
+            "precio": 20
+        }
+    ]
+}

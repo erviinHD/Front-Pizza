@@ -1,0 +1,17 @@
+<div class="container">
+    <br>
+    <h4>Actualizar Pizza</h4>
+    <hr>
+        <div class="form-group">
+          <label >Nombre </label>
+          <input type="text"  [(ngModel)]="pizzaData.name" class="form-control" placeholder="Pizza">
+        </div>
+        <div class="form-group">
+          <label >Origen</label>
+          <input type="text" [(ngModel)]="pizzaData.origin"  class="form-control" placeholder="Origen">
+        </div>
+       
+        <button type="submit" class="btn btn-warning btn-lg btn-block" (click)="editPizza()">Actualizar</button>
+          <br>
+  
+</div>

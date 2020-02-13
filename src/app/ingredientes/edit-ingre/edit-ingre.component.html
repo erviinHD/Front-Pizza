@@ -1,0 +1,21 @@
+<div class="container">
+    <br>
+    <h4>Actualizar Ingrediente</h4>
+    <hr>
+    <div class="form-group">
+      <label >ID </label>
+      <input type="text"  [(ngModel)]="ingredientData.id" class="form-control" placeholder="Identificador">
+    </div>
+        <div class="form-group">
+          <label >Nombre </label>
+          <input type="text"  [(ngModel)]="ingredientData.name" class="form-control" placeholder="Ingrediente">
+        </div>
+        <div class="form-group">
+          <label >Calorias</label>
+          <input type="text" [(ngModel)]="ingredientData.calories"  class="form-control" placeholder="Calorias">
+        </div>
+       
+        <button type="submit" class="btn btn-warning btn-lg btn-block" (click)="editIngredient()">Actualizar</button>
+          <br>
+  
+</div>
